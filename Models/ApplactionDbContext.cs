@@ -8,5 +8,7 @@ namespace MoviesAPI.Models
         public ApplactionDbContext(DbContextOptions<ApplactionDbContext> options) :base(options)
         {
         }
+
+        public DbSet<Genre> Genres { get; set; }
     }
 }
